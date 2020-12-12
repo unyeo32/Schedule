@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
 	
 	//1. FILE pointer open & error handling
 	//fill code here ----
-	fp= fopen("C:", "w");
+	fp= fopen("C:\code\Schedule\project2_schedule", "w");
 	
 	if (fp==NULL)
 	{
@@ -60,10 +60,15 @@ int main(int argc, char *argv[]) {
 	while(exit_flag == 0) 
 	{
 		//3. menu printing
-		//fill code here ---- 
+		printf("1. print all the schedules\n");
+		printf("2. search for schedules in the month\n");
+		printf("3. search for schedules in the place\n");
+		printf("4. search for specific type schedule\n");
+		printf("5. exit\n\n");
 		
 		//4. get option from keyboard
-		//fill code here ----
+		printf(" select an option: ");
+		scanf("%i", &option);
 		
 		
 		switch(option)
@@ -139,7 +144,7 @@ int main(int argc, char *argv[]) {
 				}
 				break;
 				
-			case 5:
+			case 5://exit...end the program
 				printf("Bye!\n\n");
 				exit_flag = 1;
 				break;
