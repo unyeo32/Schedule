@@ -105,7 +105,8 @@ int main(int argc, char *argv[]) {
 				while (list_isEndNode(ndPtr) == 0)
 				{
 					//file code here -- print scheduling info elements matching to the month
-					for (cnt=0;)
+					
+					for (cnt=0;cnt<11;cnt++)
 					{
 						printf(--------------------------------------------------/n);
 						printf("%i.",cnt);
@@ -132,7 +133,7 @@ int main(int argc, char *argv[]) {
 						if (strncmp(ndPtr, place, strlen(place) )== 0)
 						{
 							printf(--------------------------------------------------/n);
-							
+							printf(sched_getPlace);
 	 						return 0;}
 				}
 					ndPtr = list_getNextNd(ndPtr); //get the next node from the list
