@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
 	
 	
 	//2. read from the file
-	while ( /* fill code here -- read from the file*/ )
+	while ( fp = fopen("schedule.dat", "r") )
 	{	
 		//fill code here -- generate genSchedInfo structure by genSchedInfo function
 		sched_genSchedInfo(char* name, char* place, int type, int month, int day)
@@ -79,7 +79,7 @@ int main(int argc, char *argv[]) {
 				ndPtr = list;
 				while (list_isEndNode(ndPtr) == 0)
 				{
-					//file code here -- print count and each scheduling info element
+					// print count and each scheduling info element
 					for (cnt=0;cnt<*schedInfo;cnt++)
 					{
 						printf(--------------------------------------------------/n);
